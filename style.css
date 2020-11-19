@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 250;
+}
+
+body {
+    background-color: #171717;
+    margin-top: 75px;
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+}
+
+.border {
+    border-bottom: 0.5px solid #303030;
+}
+
+.grey-text {
+    color: #AAAAAA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-pic {
+    border-radius: 60%;
+}
+
+.nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: #202020;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 23px;
+    z-index: 1;
+}
+
+.nav img, i {
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+
+.
