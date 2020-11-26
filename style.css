@@ -1,6 +1,157 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+html {
+    font-size: 10px;
 }
 
+html, body {
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 10px 20px 10px;
+    background-color: white;
+    height: 20px;
+}
+
+
+.left-header img {
+    padding: 5px;
+}
+
+.right-header img {
+    padding: 9px;
+}
+
+input {
+    width: 580px;
+    height: 30px;
+    align-self: center;
+    margin: 0 auto;
+    border-width: 1px;
+    background-color: ghostwhite;
+}
+
+#magnifier {
+    position: relative;
+    top: 3px;
+    left: 10px;
+    max-height: 70%;
+    width: auto;
+}
+
+/* Page Content */
+
+section {
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+aside {
+    float: right;
+    width: 30%;
+    margin-right: 85px;
+}
+
+.video-content iframe{
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.video-title {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0px;
+}
+
+.video-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1px;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.video-views{
+    font-size: 1.4rem;
+    color:black;
+}
+
+.likes-dislikes{
+    display: flex;
+}
+
+.likes-dislikes div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.likes-dislikes div span{
+    color: #aaa;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 0.8rem;
+}
+
+.likes-dislike div img{
+    width: 20px;
+    height: 20px;
+}
+
+.thumbs-up-down{
+    display: flex;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    border-bottom: 2px solid #aaa;
+}
+
+.likes{
+    cursor: pointer;
+}
+
+.channel-info .user-profile img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+#comments .user-profile img{
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 2rem;
+}
+
+.name-subscribers{
+    margin-left: 1.5rem;
+}
+
+.author-name a{
+    width: auto;
+    padding-right: 0.4rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.subcribers-numbers {
+    font-size: 1.3rem;
+}
+
+.subscriber-author {
+    padding: 1rem 1.5rem;
+}
