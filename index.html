@@ -3,96 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Clone</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <title>youtube</title>
 </head>
-<body>
+<body>  
+       <header class="header">
 
-    <nav class="nav-bar">
-  <div class="left-nav">
-     <a id="google-apps" href="https://youtube.com"><img src="https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="menu icon" width="30" height="30"></a>
-     <a href="https://youtube.com"> <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c548.png" alt="youtube-logo" width="100" height="60"></a>
- </div>
-   
-     <div class="center">
-     <form>
-     <div class="search-bar">
-     <input type="text" placeholder="Search..">
-     <button>
-    <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-vector-search-icon-png-image_3783210.jpg" width="25" height="25"/></button>
-     </div>
-     </form>
-  </div>
+        <div class="left-header">
+           <img id="menu-button" src="images/menu icon.svg" height="20">
+           <img id="youtube-logo" src="images/Group 1.svg" height="20">
+         </div>
 
- <div class="right-nav">
-   <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-video-vector-icon-png-image_3730784.jpg" alt="video icon" width="30" height="30">
-  <img src="https://static.thenounproject.com/png/1714217-200.png" alt="apps icon" width="30" height="30">
-  <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="bell icon" width="30" height="30">
-  <a href="https://accounts.google.com">
-  <img class="profile-pic" src="data:image/png;base64,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" width="30" height="30">
-   </a>
-   </div>
-      </nav> 
+         <div class="search-bar">
+             <input class="search-input" type="text" placeholder="search">
+             <img id="magnifier" src="images/Search-icon.svg" height="15">
+         </div>
+
+         <div class="right-header">
+             <img id="video" src="images/Group 2.svg" height="15">
+             <img id="app" src="images/app-icon.svg" height="15">
+             <img id="bell" src="images/bell-icon.svg" height="">
+            <a id="google-accts" href="https://accounts.google.com"></a> <img id="profile" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYzYuNjIzIDAgMTIgNS4zNzcgMTIgMTJzLTUuMzc3IDEyLTEyIDEyLTEyLTUuMzc3LTEyLTEyIDUuMzc3LTEyIDEyLTEyem04LjEyNyAxOS40MWMtLjI4Mi0uNDAxLS43NzItLjY1NC0xLjYyNC0uODUtMy44NDgtLjkwNi00LjA5Ny0xLjUwMS00LjM1Mi0yLjA1OS0uMjU5LS41NjUtLjE5LTEuMjMuMjA1LTEuOTc3IDEuNzI2LTMuMjU3IDIuMDktNi4wMjQgMS4wMjctNy43OS0uNjc0LTEuMTE5LTEuODc1LTEuNzM0LTMuMzgzLTEuNzM0LTEuNTIxIDAtMi43MzIuNjI2LTMuNDA5IDEuNzYzLTEuMDY2IDEuNzg5LS42OTMgNC41NDQgMS4wNDkgNy43NTcuNDAyLjc0Mi40NzYgMS40MDYuMjIgMS45NzQtLjI2NS41ODYtLjYxMSAxLjE5LTQuMzY1IDIuMDY2LS44NTIuMTk2LTEuMzQyLjQ0OS0xLjYyMy44NDggMi4wMTIgMi4yMDcgNC45MSAzLjU5MiA4LjEyOCAzLjU5MnM2LjExNS0xLjM4NSA4LjEyNy0zLjU5em0uNjUtLjc4MmMxLjM5NS0xLjg0NCAyLjIyMy00LjE0IDIuMjIzLTYuNjI4IDAtNi4wNzEtNC45MjktMTEtMTEtMTFzLTExIDQuOTI5LTExIDExYzAgMi40ODcuODI3IDQuNzgzIDIuMjIyIDYuNjI2LjQwOS0uNDUyIDEuMDQ5LS44MSAyLjA0OS0xLjA0MSAyLjAyNS0uNDYyIDMuMzc2LS44MzYgMy42NzgtMS41MDIuMTIyLS4yNzIuMDYxLS42MjgtLjE4OC0xLjA4Ny0xLjkxNy0zLjUzNS0yLjI4Mi02LjY0MS0xLjAzLTguNzQ1Ljg1My0xLjQzMSAyLjQwOC0yLjI1MSA0LjI2OS0yLjI1MSAxLjg0NSAwIDMuMzkxLjgwOCA0LjI0IDIuMjE4IDEuMjUxIDIuMDc5Ljg5NiA1LjE5NS0xIDguNzc0LS4yNDUuNDYzLS4zMDQuODIxLS4xNzkgMS4wOTQuMzA1LjY2OCAxLjY0NCAxLjAzOCAzLjY2NyAxLjQ5OSAxIC4yMyAxLjY0LjU5IDIuMDQ5IDEuMDQzeiIvPjwvc3ZnPg==" alt="profile-icon" height="19">
+         </div>
+        </header>
+        
+        <main class="video-content">
+          <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcG_YvR29uE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
          
-      <main class="main">
-        <div class="video-content">
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_Twtskqf9WU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-main-content">
-                <div class="video-title-border">
-                    <div class="title">
-                        <h1> How to Never Get Friendzoned</h1>
-                    </div>
-                    <div class="stats">
-                        <p class="black-text">3,045,800 views . Oct 12, 2020</p>
-                        <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="">
-                    </div>
-                </div>
-                 <div class="video-description">
-                     <div class="row1">
-                         <a href="https://www.howtobeast.com/"><img src="https://yt3.ggpht.com/ytc/AAUvwniqJ0MncsJVzFX1tnQ5pNWmNSqFw8S2JcUnh02s6A=s48-c-k-c0xffffffff-no-rj-mo"class=profile-pic></a>
-                     </div>
-                     <div class="row2">
-                         <p style="font-weight: 800; font-size: 15px; padding-bottom: 3px;">How To Beast!</p>
-                         <p class="black-text" style="font-size: 14px;">100M ubscribers</p>
-                         <div class="desc">
-                            <p><i class="arrow right"></i>Take the FREE Physique Quiz</p>
-                            <p><i class="arrow right"></i>The Homie Dave's Channel</p>
-                         </div>
-                         <button><a href="https://www.howtobeast.com/" target="_blank">Show More</a></button>
-                     </div>
-                     <div class="row3">
-                         <button>Subscribe</button>
-                     </div>
-                 </div>
-            </div>
-            <div class="comments">
-                <div class="comments-header">
-                    <h2> Comments</h2>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iwGmS-vixgI_qt5r3iVpMt_ReUH2lJzgjg&usqp=CAU" alt="">
-                </div>
-                <div class="public-comment">
-                    <img class="profile-pic" src="https://s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png">
-                    <input type="text" placeholder="Add a public comment...">
-                </div>
-            </div>
-        </div>
+        <div class="video-info">
+            <h1 class="video-title">
+              Saying Goodbye
+            </h1>
         
 
+        <div class="video-stats">
+          <div class="video-views">
+            124,816,230 views • Sep 15, 2020
+          </div> 
+        <div class="likes-dislikes">
+          <div id="thumbs-up-down">
+            <div class="likes">
+              <img class="thumbs-up" src="images/thumbs-up.svg">
+              <span>1000K</span>
+            </div>
+            <div class="likes">
+              <img class="thumbs-down" src="images/thumbs-up.svg">
+              <span>20</span> 
+            </div>
+          </div>
+          <div class="likes">
+            <img class="share" src="images/SHARE.svg">
+            <span>SHARE</span>
+          </div>
+          <div class="likes">
+            <img src="images/save.svg">
+            <span>SAVE</span>
+          </div>
+          <div class="likes">
+            <img class="more-options" src="images/More.svg">
+          </div>   
+        </div>
+      </div>
+         
+
+        <div class="channel-info"> 
+          <div class="user-profile">
+            <a href="https://www.howtobeast.com/" target="_blank">
+              <img id="magnify-glass" src="images/David De Las  1.svg">
+            </a>
+          </div> 
+          
+          <div class="name-subscribers">
+            <div class="author-name">
+              <a href="https://www.howtobeast.com/">How To Beast</a>
+            </div>
+            <div class="subcribers-numbers">
+              100B 
+            </div>
+          </div>
+
+          <div class="subscriber-author">
+            SUBSCRIBE
+          </div>
+        </div>
+         
+        <div id="clip-info">
+          <P>Shop the EDGE launch (up to 70% OFF entire site</P>
+          <P>My Daily Supplements (code=BEAST)</P>
+        </div>
+
+        <div id="show-more">
+          SHOW-MORE
+        </div>
+      </div>
+
+        <div id="comments">
+          <div class="comments-title">
+            <div>5000 Comments</div>
+          <button id="sort-by">
+            <img id="magnify-glass" src="images/sort by.svg"> <span>SORT BY</span>
+          </button>
+          </div> 
+
+        <div id="sign-in-user">
+          <div class="user-profile">
+            <img id="magnify-glass" src="images/profile.svg">
+          </div>
+           <div class="add-comment">
+             <input type="text" name="firstname" value="Add a public comment...">
+           </div>
+        </div>
+
+         <div class="users-comments">
+
+              <div class="comment-user">
+                <div class="user-profile">
+                  <a href="https://www.howtobeast.com/">
+                    <img id="magnify-glass" src="images/profile.svg"> 
+                  </a> 
+                </div>
+
+                <div class="name-comment">
+                  <div class="user-name">
+                    Haris <span class="comment-date">2 days ago</span>
+                  </div>
+
+                  <div class="comment-content">
+                    If you follow his life you don't even think its click bait he's just moving
+                  </div>
+                  <div class="comment-rate">
+                    <img class="thumb-up-small" src="images/thumbs-up.svg"><span>10k</span>
+                    <img class="thumb-down-small" src="images/thumbs down.svg">
+                    <span>Reply</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="comment-user">
+                <div class="user-profile">
+                  <a href="https://www.howtobeast.com">
+                    <img id="magnify-glass" src="images/profile.svg" alt="">
+                  </a>
+                </div>
+                 <div class="name-comment">
+                   <div class="user-name">
+                     Morty <span class="comment-date">3 Weeks ago</span>
+                   </div>
+                   <div class="comment-content">
+                    If they actually break up nobody is gonna care as much because they “broke up” over 100x😂
+                   </div>
+                   <div class="comment-rate">
+                     <img class="thumb-up-small" src="images/thumbs-up.svg"><span>1k</span>
+                     <img class="thumb-down-small" src="images/thumbs down.svg">
+                     <span>Reply</span>
+                   </div>
+                 </div>
+
+                 <div class="view-reply">
+                   <img src="images/More.svg"><span>View More</span>
+                 </div>
+                </div>
+         </div>
+
+         <div class="comment-user">
+           <div class="user-profile">
+             <a href="https://www.howtobeast.com/">
+              <img id="magnify-glass" src="images/profile.svg">
+            </a>
+           </div>
+                
+           <div class="name-comment">
+             <div class="user-name">
+              Blue2 SharkR6
+             <span class="comment-date">3 days ago</span>
+             </div>
+
+             <div class="comment-content">
+              David we miss the "I’m gonna be mad bro" after the video 😔
+
+              56
+             </div>
+              <div class="comment-rate">
+                <img class="thumbs-up-small" src="images/thumbs-up.svg">
+                <img class="thumbs-down-small" src="images/thumbs-up.svg">
+                <span>Reply</span>
+              </div>
+           </div>    
+         </div>
+        </div>
+        </main>
+</section>
 
 
-      </main>
- 
+<aside id="sidebar">
+  <div class="next-video">
+    <div id="autoplay">
+      <span>Up next</span>
+      <span>AUTOPLAY</span>
+      <button class="">switch</button>
+    </div>
+  
+  <a class="recommend" href="https://youtu.be/_eTUA20t0eI" target="_blank">
+    <div class="video-recommend">
+      <img src="https://i.ytimg.com/vi/_eTUA20t0eI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC6tpGcFzstIXPgJW0o3ItiDbDWKA">
+      <div class="video-length">
+        <span>18:29</span>
+      </div>
+      <div class="video-icons">
+        <button class="btn">
+          <img id="add-playlist" src="images/add to queue.svg">  
+        </button>
+      </div>
+    </div>
+     
+   <div class="recommend-info">
+     <h3 class="recommend-title">
+      24 HOURS with the TESLA Model X (vs. Audi E-Tron)
+     </h3>
+   </div>
+     <div class="recommend-author">
+       How To Beast
+     </div>
+     <div class="recommend-views">
+       6M views. 3 days ago
+     </div>
+     <div class="vertical-dots">
+       <img src="images/More.svg">
+     </div>
+  </a> 
+</div>
 
 
 
+  
+  <a class="recommemnd" href="https://youtu.be/v9fJDIwXJkQ" target="_blank">
+    <div class="video-recommend">
+      <img src="https://i.ytimg.com/an_webp/RiOiUnv329I/mqdefault_6s.webp?du=3000&sqp=CP6l-v0F&rs=AOn4CLDt_EYnR1ksNsDmlQHx8p3UjvjhjA">
+      <div class="video-length">
+        <span>20:16</span>
+      </div>
+      <div class="video-icons">
+        <button class="btn">
+          <img id="add-playlist" src="images/clock.svg">
+        </button>
+        <button class="btn">
+          <img id="watch-later" src="images/add to queue 1.svg">
+        </button>
+      </div>
+    </div>
+
+    <div class="recommend-info">
+      <h3 class="recommend-title">
+        I went VEGAN for 7 Days (here's what happened...)
+      </h3>
+      <div class="recommend-author">
+        How To Beast
+      </div>
+      <div class="recommend-views">Recommended for you</div>
+    </div>
+    <div class="vertical-dots">
+      <img src="images/More.svg" >
+    </div>
+  </a>
+
+  <a class="recommend" href="https://youtu.be/v9fJDIwXJkQ" target="_blank">
+    <div class="video-recommend">
+      <img src="https://i.ytimg.com/an_webp/v9fJDIwXJkQ/mqdefault_6s.webp?du=3000&sqp=CJix-v0F&rs=AOn4CLDqm3LYCvjUeaemA-1AaT75EP8yDw">
+      <div class="video-length">
+        <span>13:52</span>
+      </div>
+
+      <div class="video-icons">
+        <button class="btn">
+         <img id="add-playlist" src="images/clock.svg">
+        </button>
+          <button class="btn">
+            <img id="watch-later" src="images/add to queue 1.svg">
+          </button>
+      </div>
+    </div>
+
+    <div class="recommend-info">
+      <h3 class="recommend-title">3 Steps to LEVEL UP Your Life (no one will tell you this...)</h3>
+      <div class="recommend-author">
+        How To Beast
+      </div>
+      <div class="recommend-views">Recommended for you</div>
+    </div>
 
 
-
-
-
-      
+    <div class="vertical-dots">
+      <img src="images/More.svg">
+    </div>
+  </a>
+</aside>
 </body>
 </html>
+
